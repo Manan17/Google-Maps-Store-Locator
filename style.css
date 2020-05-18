@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    z-index: 100;
+    font-size: 88px;
+    font-weight: bold;
+    color: black;
+    top: 30px;
+    left: 100px;
+}
+
+.weather{
+    position: absolute;
+    z-index: 100;
+    font-size: 38px;
+    font-weight: bold;
+    color: black;
+    top: 30px;
+    left: 900px;
+}
+
+.search-container{
+    position: absolute;
+    z-index: 100;
+    top: 130px;
+    left: 100px;
+    width: 300px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #454E53;
+    display: flex;
+}
+
+.search-container .search {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search-container input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+.search-container i{
+    font-size: 25px;
+    color: white;
+}
+
+.search-container input:focus{
+    outline: none;
+}
+
+.store-list-container{
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    left: 100px;
+    top: 190px;
+    width: 300px;
+    border-radius: 40px;
+    bottom: 20px;
+    display: flex;
+    overflow-y: hidden;
+    padding-bottom: 25px;
+}
+
+.stores-list{
+    flex-grow: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-y: scroll;
+}
+.store-container{
+    
+    margin-top: 20px;
+    padding-right: 50px;
+    border-bottom: 1px solid #979797;
+    display: flex;
+    border-radius: 12px;
+}
+
+.store-back{
+    display: flex;
+    flex-grow: 1;
+    margin: 8px;
+}
+
+
+.store-container:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.store-phone-number{
+    padding-top: 10px;
+    color: #B5ADAD;
+    
+    
+}
+
+span{
+    display: block;
+}
+
+.store-number{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(73, 69, 69);
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    
+}
+
+.store-number-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.store-info-container{
+    flex-grow: 1;
+}
+
+.fa-phone-square-alt {
+    font-size: 20px;
+    color:  #00FF00;
+}
+
+.fa-map-marked-alt{
+    font-size: 20px;
+    color:  #FF1E1E;
+}
+
+.fa-search {
+    color: #B5ADAD;
+}
+
+.fa-search:hover{
+    cursor: pointer;
+}
